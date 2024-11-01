@@ -7,7 +7,6 @@ set cursorline
 set noswapfile
 set undofile
 set undodir=~/.nvim/undo
-set filetype plugin on
 
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * NERDTree | if argc() > 0 || exists("s:std_in") | wincmd p | endif
@@ -27,3 +26,4 @@ call plug#begin()
 
    call plug#end()
 
+colorscheme gruvbox
