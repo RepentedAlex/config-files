@@ -1,5 +1,5 @@
 set tabstop=4
-set autoindent
+set shiftwidth=4
 set number
 set cc=80
 syntax on
@@ -7,6 +7,10 @@ set cursorline
 set noswapfile
 set undofile
 set undodir=~/.nvim/undo
+filetype indent on
+filetype plugin indent on
+set si
+set ai
 
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * NERDTree | if argc() > 0 || exists("s:std_in") | wincmd p | endif
@@ -23,6 +27,7 @@ call plug#begin()
    Plug 'junegunn/gv.vim'
    Plug 'simnalamburt/vim-mundo'
    Plug 'preservim/nerdcommenter'
+   Plug 'danymat/neogen'
 
    call plug#end()
 
