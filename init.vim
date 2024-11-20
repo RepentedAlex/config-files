@@ -3,7 +3,6 @@ set shiftwidth=4
 set number
 set cc=80
 syntax on
-set number
 set relativenumber
 set cursorline
 set noswapfile
