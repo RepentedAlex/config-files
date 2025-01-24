@@ -14,7 +14,7 @@
 
 function fish_greeting
 
-set WEATHER $(curl -s 'wttr.in/Paris?format=2')
+set WEATHER (curl -s 'wttr.in/Paris?format=2')
 
 echo (set_color cyan)  "            ▓▒▒▒▒▒▒▒▒▒   ▒▒▒▒▒    ▒▒▒▒▒    ▒▒▒▒▒ ▒▒▒▒    ▒▒▒▒ ▒▒▒▒▒▒▒▒▒▒▒   ▒▒▒▒▒▒   ▒▒▒▒          " 
 echo (set_color cyan)  "          ▒▒▒▒▒▒▒▒▒▒▒▒  ▒▒▒▒▒▒▒   ▒▒▒▒▒   ▒▒▒▒▒▒ ▒▒▒▒    ▒▒▒▒ ▒▒▒▒   ▒▒▒▒▒  ▒▒▒▒▒▒   ▒▒▒▒          " 
